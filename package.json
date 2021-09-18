@@ -1,0 +1,23 @@
+{
+  "name": "tier2-week2-weekendexercise---node-express-ajax-get-post",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSNatLUTHER/Tier2-Week2-WeekendExercise---Node-Express-AJAX-GET-POST.git"
+  },
+  "author": "Chris Nelson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSNatLUTHER/Tier2-Week2-WeekendExercise---Node-Express-AJAX-GET-POST/issues"
+  },
+  "homepage": "https://github.com/CSNatLUTHER/Tier2-Week2-WeekendExercise---Node-Express-AJAX-GET-POST#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
