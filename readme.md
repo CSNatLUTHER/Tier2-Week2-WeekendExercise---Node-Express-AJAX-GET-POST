@@ -1,5 +1,8 @@
-NODE EXPRESS SERVER SPIN UP
+NODE EXPRESS SERVER INTRO
 ===
+
+SERVER SPIN UP
+---
 
 - ensure node is installed ( node -v )
 - initialize git repo
@@ -47,3 +50,19 @@ Phase 2: BASIC ROUTES:
     ```
 - restart server to validate
 - `localhost:port#` and `localhost:port#/counter`in broswer to view
+
+
+SERVE WEB PAGE ( HTML, JS, JQ, CSS )
+---
+
+- in server folder, create a `public` folder
+- set up usual website files in `public` folder
+    - index.html, scripts/scripts.js, vendors/jquery, styles/styles.js
+- tell server to look in the `server/public` folder in the `server.js` file
+- update `server.js` file 
+    ```
+        // uses 
+        app.use( express.static ( 'server/public' ) );
+    ```
+- no longer using html to launch application
+    spin up server and call localhost in browser
