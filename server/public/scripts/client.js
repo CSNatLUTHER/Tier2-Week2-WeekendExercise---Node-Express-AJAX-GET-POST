@@ -1,6 +1,9 @@
 $( document ).ready( onReady );
 
 function onReady (){
+    // click handler for elements on DOM
+    $( "#refreshButton" ).on ('click', getMessages );
+    $( "#submitButton" ).on ( 'click', sendMessages );
     // make a GET request for exisiting messages
     getMessages();
 } // end on ready
@@ -13,7 +16,7 @@ function getMessages(){
     }).then( function( response ) {
         console.log( 'back from server with:', response );
         let el = $("#messages")
-        el.empty
+        el.empty();
         for(let i=0; i<response.length; i++){
             el.append(`<li> ${response[i].name} : ${response[i].message} </li>`)
         }
@@ -22,3 +25,7 @@ function getMessages(){
         console.log(`Error: ${ err }`);
     })
 } // end getMessages function
+
+function sendMessages(){
+    console.log('in sendMessages');
+}
