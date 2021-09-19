@@ -1,0 +1,26 @@
+.blue{
+    background-color: rgba(41, 131, 179, 0.831);
+    color: white;
+    border-radius: 25px;
+    padding: 7px
+}
+
+.grey{
+    background-color: rgba(164, 160, 160, 0.838);
+    border-radius: 25px;
+    padding: 7px
+}
+
+.textPlacmentRight{
+    text-align: right;
+    width: 400px;
+    border-radius: 25px;
+    padding: 7px
+}
+
+.textPlacmentLeft{
+    text-align: left;
+    width: 400px;
+    border-radius: 25px;
+    padding: 7px
+}

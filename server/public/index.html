@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="vendors/jquery - 3.6.0 - Production.js"></script>
     <script src="scripts/client.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Tier2-Week2-WeekendExercise - Node,Express,AJAX,GET,POST</title>
 </head>
@@ -13,16 +14,19 @@
     <h1>Tier2-Week2-WeekendExercise - Node, Express, AJAX, GET, POST</h1>
     <h2>Messaging App</h2>
     <div id=outputDiv>
-        <p id="messages"></p>
+        <div id="messages">
+
+        </div>
+        <br>
    </div>
     <div id="inputDiv">
-        <select id="name">
+        <select id="messageName">
             <option value="Heather">Heather</option>
             <option value="Chris">Chris</option>
           </select>
-        <input type="text" id="name" size="50" placeholder="Message">
+        <input type="text" id="messageText" size="30" placeholder="Message">
         <input type="button" id="submitButton" value="Send">
-        <input type="button" id="refreshButton" value="Check Messages">
-    </div>  
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script 
 </body>
 </html>

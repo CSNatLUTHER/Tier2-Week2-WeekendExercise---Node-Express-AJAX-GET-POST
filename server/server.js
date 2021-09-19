@@ -1,17 +1,18 @@
 // requires
+const { response } = require('express');
 let express = require ( 'express' );
 let app = express();
+// NEEDED for POSTS to work
+let bodyParser = require( 'body-parser' );
 
 // uses
 app.use( express.static ( 'server/public' ) );
+app.use( bodyParser.urlencoded({ extended: true } ) );
 
 // global variables
 const port = 5000;
 let counter = 0;
-let messages = [{
-    name: "Chris",
-    message: "I posted my first message!"
-}];
+let messages = [];
 
 // spin up server
 app.listen( port, ()=> {
@@ -33,4 +34,10 @@ app.get( '/counter', (req, res ) => {
 app.get( '/messages', (req, res ) => {
     console.log( '/messages GET');
     res.send( messages )
+})
+
+app.post( '/messages', (req, res ) =>{
+    console.log('/messages POST', req.body );
+    messages.push( req.body );
+    res.sendStatus( 201 );
 })
